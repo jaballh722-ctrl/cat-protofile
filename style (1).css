@@ -545,13 +545,12 @@ section {
 	filter: drop-shadow(0 10px 25px rgba(74, 95, 193, 0.3));
 }
 footer {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    background-color: #1a1a1a;
     color: #fff;
     text-align: center;
-    padding: 40px 20px;
-    margin-top: 60px;
-    box-shadow: 0 -5px 20px rgba(0, 255, 0, 0.1);
-    position: relative;
+    padding: 30px 20px;
+    margin-top: 0; /* غيرنا من 50px لـ 0 */
+    border-top: 2px solid #00ff00;
 }
 
 footer::before {
@@ -566,13 +565,15 @@ footer::before {
 
 footer h5 {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0;
-    letter-spacing: 1.5px;
-    opacity: 0.9;
-    animation: fadeIn 2s ease-in;
+    letter-spacing: 1px;
+    line-height: 1.6;
 }
-
+.projects {
+    margin-bottom: 0;
+    padding-bottom: 40px; /* بدل ما يكون في مسافة تحت، نخليها padding داخل الـ section */
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -641,4 +642,5 @@ footer h5 {
 		padding: 40px 30px;
 	}
 }
+
 
