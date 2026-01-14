@@ -545,12 +545,12 @@ section {
 	filter: drop-shadow(0 10px 25px rgba(74, 95, 193, 0.3));
 }
 footer {
-    background-color: #1a1a1a;
+    background-color: #000;
     color: #fff;
     text-align: center;
-    padding: 30px 20px;
-    margin-top: 0; /* غيرنا من 50px لـ 0 */
-    border-top: 2px solid #00ff00;
+    padding: 20px;
+    margin-top: 0;
+    font-size: 14px;
 }
 
 footer::before {
@@ -564,11 +564,10 @@ footer::before {
 }
 
 footer h5 {
-    font-size: 16px;
-    font-weight: 400;
     margin: 0;
-    letter-spacing: 1px;
-    line-height: 1.6;
+    font-weight: 400;
+}
+-height: 1.6;
 }
 .projects {
     margin-bottom: 0;
@@ -642,5 +641,6 @@ footer h5 {
 		padding: 40px 30px;
 	}
 }
+
 
 
